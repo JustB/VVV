@@ -37,8 +37,10 @@
 # No need to share our individual sites with each other
 /www/leonori/htdocs/*
 /www/gruppobossoni/htdocs/*
+/www/autoviemme/htdocs/*
 !/www/leonori/htdocs/.gitkeep
 !/www/gruppobossoni/htdocs/.gitkeep
+!/www/autoviemme/htdocs/.gitkeep
 /www/phpcs/
 /www/wp-cli/
 

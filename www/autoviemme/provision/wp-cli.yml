@@ -1,0 +1,28 @@
+path: ../htdocs
+url: http://autoviemme.dev
+color: true
+apache_modules:
+  - mod_rewrite
+
+core download:
+  locale: it_IT
+
+core install:
+  title: autoviemme
+  description: Sito di autoviemme
+  url: autoviemme.dev
+  admin_user: admin
+  admin_password: admin
+  admin_email: test@dealerk.it
+
+core config:
+  dbuser: root
+  dbpass: mysql
+  dbname: wp_autoviemme
+  dbhost: 192.168.50.7
+  dbprefix: wp_
+  locale: it_IT
+  extra-php: |
+    define( 'WP_DEBUG', true );
+    define( 'WP_POST_REVISIONS', 3 );
+    define( 'WP_ENV', 'development' );
