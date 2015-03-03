@@ -1,0 +1,28 @@
+path: ../htdocs
+url: http://leonori3.dev
+color: true
+apache_modules:
+  - mod_rewrite
+
+core download:
+  locale: it_IT
+
+core install:
+  title: Leonori
+  description: Sito di leonori
+  url: leonori3.dev
+  admin_user: admin
+  admin_password: admin
+  admin_email: test@dealerk.it
+
+core config:
+  dbuser: root
+  dbpass: root
+  dbname: leonori3
+  dbhost: localhost
+  dbprefix: wp_
+  locale: it_IT
+  extra-php: |
+    define( 'WP_DEBUG', true );
+    define( 'WP_POST_REVISIONS', 3 );
+    define( 'WP_ENV', 'development' );

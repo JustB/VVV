@@ -651,6 +651,8 @@ while read hostfile; do
 	done < "$hostfile"
 done
 
+echo -e "Host bitbucket.org\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
 end_seconds="$(date +%s)"
 echo "-----------------------------"
 echo "Provisioning complete in "$(expr $end_seconds - $start_seconds)" seconds"
