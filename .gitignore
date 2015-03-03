@@ -35,7 +35,12 @@
 /log/*.log
 
 # No need to share our individual sites with each other
-/www/*
+/www/leonori/htdocs/*
+/www/gruppobossoni/htdocs/*
+!/www/leonori/htdocs/.gitkeep
+!/www/gruppobossoni/htdocs/.gitkeep
+/www/phpcs/
+/www/wp-cli/
 
 # And no need to share individual SQL files with each other
 *.sql

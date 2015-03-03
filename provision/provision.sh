@@ -602,6 +602,8 @@ else
 	echo -e "\nNo network available, skipping network installations"
 fi
 
+echo -e "Host bitbucket.org\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
 # Find new sites to setup.
 # Kill previously symlinked Nginx configs
 # We can't know what sites have been removed, so we have to remove all
@@ -651,7 +653,7 @@ while read hostfile; do
 	done < "$hostfile"
 done
 
-echo -e "Host bitbucket.org\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
 
 end_seconds="$(date +%s)"
 echo "-----------------------------"
